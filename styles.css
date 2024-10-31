@@ -1,0 +1,170 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #3498db;
+}
+.sidebar a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar a:hover, .sidebar a.active {
+    background-color: #34495e;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+.greeting {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+.appointment-list, .patient-list, .message-list {
+    list-style-type: none;
+    padding: 0;
+}
+.appointment-list li, .patient-list li, .message-list li {
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.hidden {
+    display: none;
+}
+select, input[type="time"], input[type="date"], input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action-button:hover {
+    background-color: #45a049;
+}
+.content-section {
+    display: none;
+}
+.content-section.active {
+    display: block;
+}
+.status-available {
+    color: #4CAF50;
+}
+.status-occupied {
+    color: #f44336;
+}
+.pet-image {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none; /* Ẩn modal theo mặc định */
+    position: fixed; /* Đặt modal ở vị trí cố định */
+    z-index: 1; /* Đặt z-index cao hơn để nó hiển thị trên tất cả các phần khác */
+    left: 0;
+    top: 0;
+    width: 100%; /* Đặt chiều rộng 100% */
+    height: 100%; /* Đặt chiều cao 100% */
+    overflow: auto; /* Thêm thanh cuộn nếu cần */
+    background-color: rgb(0,0,0); /* Màu nền */
+    background-color: rgba(0,0,0,0.4); /* Màu nền với độ mờ */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Đặt margin trên và dưới */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Đặt chiều rộng modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    background-color: #4CAF50; /* Màu nền xanh lá */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Không viền */
+    padding: 10px 20px; /* Padding cho nút */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none; /* Không gạch chân */
+    display: inline-block; /* Hiển thị dưới dạng khối */
+    font-size: 16px; /* Kích thước chữ */
+    margin: 4px 2px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Con trỏ khi di chuột */
+    border-radius: 5px; /* Bo góc nút */
+}
+
+button:hover {
+    background-color: #45a049; /* Đổi màu khi di chuột */
+}
+       
